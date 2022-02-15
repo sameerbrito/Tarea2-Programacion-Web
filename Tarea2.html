@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Calculadora</title>
+    <link rel="icon" type="icon" href="img/web.png">
+    <meta charset="utf-8">
+    <meta name="description" content="Tarea 2 Calculadora WEB, para la materia de programacion web">
+    <link href="CSS/Tarea2.css" rel="stylesheet">
+    <script src="JS/Tarea2.js"></script>    
+  </head>
+    <header>
+        <h1 class="titulo">Calculadora</h1>
+    </header>
+  <body>
+    <table class="calculadora">
+        <tr class="historial">
+            <td  rowspan="7">
+                <h1 id="titulo">Historial</h1>
+                <button id="history">
+                <p id="show">0</p>
+                <button id="btncl" onclick="clean();"> Clear</button>
+            </button></td>
+        </tr>
+        <tr class="output">
+            <td  colspan="4"><button id="result">0</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="add('7')">7</button></td>
+            <td><button onclick="add('8')">8</button></td>
+            <td><button onclick="add('9')">9</button></td>
+            <td><button onclick="calc('/')">/</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="add('4')">4</button></td>
+            <td><button onclick="add('5')">5</button></td>
+            <td><button onclick="add('6')">6</button></td>
+            <td><button onclick="calc('*')">*</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="add('1')">1</button></td>
+            <td><button onclick="add('2')">2</button></td>
+            <td><button onclick="add('3')">3</button></td>
+            <td><button onclick="calc('-')">-</button></td>
+        </tr>
+        <tr>
+            <td><button onclick="calc('ac')" id="ac">AC</button></td>
+            <td><button onclick="add('0')">0</button></td>
+            <td><button onclick="add('.')">.</button></td>
+            <td><button onclick="calc('+')">+</button></td>          
+        </tr>
+        <tr>
+            <td colspan="4"><button id="igual" onclick="calc('=')">=</button></td>            
+        </tr>
+    </table>
+  </body>
+</html>
